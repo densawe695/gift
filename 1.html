@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>张洁瑜小姐20岁生日快乐！！！</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, sans-serif;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.logo {
+				position: absolute;
+				left: 35px;
+				width: 130px;
+				height: 80px;
+				top: 0%;
+			}
+
+			.logo img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+
+			.top-menu {
+				background-color: #CCCCFF;
+				padding: 15px 0;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			}
+
+			.menu-container {
+				display: flex;
+				justify-content: space-around;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.menu-item {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: bold;
+				padding: 10px 20px;
+				border-radius: 5px;
+				transition: background-color 0.3s;
+			}
+
+			.menu-item:hover {
+				background-color: rgba(170, 255, 255, 0.2);
+			}
+
+			.main-content {
+				display: flex;
+				flex: 1;
+				padding: 15px;
+				gap: 40px;
+				max-width: 1200px;
+				margin: 0 auto;
+				width: 100%;
+			}
+
+			.left-column {
+				flex: 1;
+				padding: 20px;
+			}
+
+			.right-column {
+				padding: 20px;
+			}
+
+			.image-container {
+				width: 100%;
+				height: 400px;
+				margin-bottom: 10px;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.image-container2 {
+				width: 100%;
+				height: 200px;
+				margin-bottom: 45px;
+				overflow: hidden;
+				border-radius: 10px;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 5px dotted pink;
+				padding: 5px;
+			}
+
+			.uniform-image {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+				display: block;
+			}
+
+			.text-content {
+				line-height: 1.6;
+				color: #333;
+				font-size: 16px;
+			}
+
+			.bottom-bar {
+				background-color: #CCCCFF;
+				padding: 15px 20px;
+				color: white;
+				text-align: center;
+			}
+
+			.input-area {
+				background-color: white;
+				color: black;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				width: 100%;
+				resize: vertical;
+				min-height: 60px;
+			}
+
+			p {
+				text-indent: 2em;
+				text-align: justify;
+			}
+
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="top-menu">
+			<nav class="menu-container">
+				<div class="logo"><img src="image/logo.png" /></div>
+				<a href="#birthday" class="menu-item">生日页</a>
+				<a href="#gift" class="menu-item" onclick="window.location.href='http://127.0.0.1:8848/%E5%8C%85%E8%A3%B9/2.html'">礼物页</a>
+				<a href="#future" class="menu-item" onclick="window.location.href='http://127.0.0.1:8848/%E5%8C%85%E8%A3%B9/3.html'">未来页</a>
+			</nav>
+		</header>
+
+		<main class="main-content">
+			<section class="left-column">
+				<div class="image-container">
+					<script type="text/javascript">
+						var n = 1;
+
+						function imgChange() {
+							n++;
+							if (n > 6) {
+								n = 1;
+							}
+							var str = "img/main" + n + ".png";
+							document.getElementById("picNo").src = str;
+						}
+						setInterval("imgChange()", 3000);
+					</script>
+					<img src="img/main1.png" id="picNo" class="uniform-image">
+				</div>
+				<div class="text-content">
+					<h1>HAPPY BIRTHDAY!</h1>
+					<p><strong>祝张洁瑜20岁生日快乐！</strong>嘿嘿，这是我自己做的一个网页，算是给你一个小惊喜吧！因为手工也给你送过很多很多了，所以想整一点不一样~
+						这个前端制作是我在大一下学期学习的计算机课程，但做这个网页不是心血来潮，而是在很早很早之前，刚准备选这个课的时候，就已经想好要做一个网页给你，于是想了很久（其实也赖于拖延症很久没有行动），最后决定在你的20岁生日，也是我们认识的第五年运用一下所学知识做给你！
+					</p><br />
+					<p>那么这一页就专门祝你生日快乐啦！希望你可以<strong>永远幸福快乐的生活着，天天开心！</strong>虽然你会疲惫，有时也会被学校的一些事情困扰，不过没关系！我一直会支持着你、陪伴着你。即使我们远隔两地，但无论何时我都会送上我的祝福。以后的每个生日我都会和你一起度过，请一直陪伴着我吧！
+					</p>
+				</div>
+			</section>
+
+			<section class="right-column">
+				<div class="image-container2">
+					<img src="image/sr1.jpg" class="uniform-image">
+				</div>
+				<div class="image-container2">
+					<img src="image/sr2.JPG" class="uniform-image">
+				</div>
+				<div class="image-container2">
+					<img src='image/sr3.JPG' class="uniform-image">
+				</div>
+			</section>
+		</main>
+
+		<footer class="bottom-bar">
+			<p>
+			<h4>本网页仅由谢沁萤所制作，警惕盗版！</h4>
+			</p>
+			<h5>盗版必究！谨防上当受骗！</h5>
+		</footer>
+
+		<script>
+			<a href="#memory" class="menu-item" onclick="window.location.href='http://127.0.0.1:8848/%E5%8C%85%E8%A3%B9/2.html'">礼物页</a>
+		</script>
+	</body>
+</html>
